@@ -1,0 +1,63 @@
+// NAME : MUHAMMAD FATKHUR ROZI BIN BUNYAMIN
+// REGISTRATION : 25DIT24F1194
+// CLASS : DIT 1B
+// ASSESMENT : PROBLEM BASED LEARNING 2
+#include <iostream>
+using namespace std;
+int main()
+{
+    int Num_Person, categories, Continue;
+    float Tiket_Cost=0, Total_payment;
+    do{
+    cout<<"WELCOME TO SNOWALK INDOOR I-CITY THEME PARK ENTRANCE"<<endl;
+    cout<<"please select the categories \n1) CHILD : 11 YEAR OLD AND BELOW \n2) TEEN : 12 TO 17 YEARS OLD \n3) ADULT : 18 TO 60 YEARS OLD \n4) TEEN : 61 YEARS OLD AND ABOVE"<<endl;
+        do{
+            cout<<endl;
+            cout<<"categories : ";
+            cin >> categories;
+            if (categories == 1){
+                cout<<"Please enter the number of child : ";
+                cin>>Num_Person;
+                
+            }
+            else if (categories == 2){
+                cout<<"Please enter the number of Teen : ";
+                cin>>Num_Person;
+                if(Num_Person >= 5){
+                    Tiket_Cost = 60 - (60 * 0.10);
+                }
+                else {
+                    Tiket_Cost =+ 60 ;
+                }
+            }
+            else if (categories == 3){
+                cout<<"Please enter the number of Adult : ";
+                cin>>Num_Person;
+                if(Num_Person >= 3){
+                    Tiket_Cost = 70 - (70 * 0.05);
+                }
+                else{
+                    Tiket_Cost =+ 70 ;
+                }
+            }
+            else if (categories == 4){
+                cout<<"Please enter the number of Senior : ";
+                cin>>Num_Person;
+                if(Num_Person >= 3){
+                    Tiket_Cost = 56 - (56 * 0.05);
+                }
+                else{
+                    Tiket_Cost =+ 56 ;
+                }
+                Tiket_Cost =+ Tiket_Cost;
+            }
+            cout<<"Are you want to add more person if yes type (1) , NO (2) : ";
+            cin >> Continue;
+            cout<<endl;
+        }while(Continue == 1);
+        cout << " your Total fee tiket is Rm "<<Tiket_Cost<<endl;
+        cout<<"Are you want to continue (1) , NO (2) : ";
+        cin >> Continue;
+        }while(Continue == 1);
+    return 0;
+}

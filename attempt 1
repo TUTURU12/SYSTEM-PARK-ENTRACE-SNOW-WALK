@@ -8,12 +8,12 @@ int main()
 {
     //declare identifier
     int Num_Person, categories, Continue;
-    float Ticket_Cost, Total_payment,cat1,cat2=0 ,cat3=0 ,cat4=0 ;
+    float Total_payment,cat1,cat2=0 ,cat3=0 ,cat4=0;
     cout<<"WELCOME TO SNOWALK INDOOR I-CITY THEME PARK ENTRANCE"<<endl;
     //loop for key in more person 
     do{
-        cout<<"Please select the categories \n1) CHILD : 11 YEARS OLD AND BELOW \n2) TEEN : 12 TO 17 YEARS OLD \n3) ADULT : 18 TO 60 YEARS OLD \n4) TEEN : 61 YEARS OLD AND ABOVE"<<endl<<endl;
-        cout<<"categories : ";
+        cout<<"Please select the categories below : \n1) CHILD : 11 YEARS OLD AND BELOW \n2) TEEN : 12 TO 17 YEARS OLD \n3) ADULT : 18 TO 60 YEARS OLD \n4) TEEN : 61 YEARS OLD AND ABOVE"<<endl<<endl;
+        cout<<"category : ";
         cin >> categories;
         
         //selection of categories and process
@@ -48,23 +48,23 @@ int main()
             }
         }
         else {
-            cout << "Invalid category selected. Please try again." << endl;
+            cout << "Invalid category selected. Please try again." <<endl<<endl;
             continue; // Skips the current iteration if invalid category is selected
         }
         // asking user about continue to add more tickets or not
-        cout<<"Are you want to add more person if yes type (1) , NO (2) : ";
+        cout<<"Do you want to add more person? If yes type (1) , NO (2) : ";
         cin >> Continue;
         cout<<endl;
     }while(Continue == 1);
     // display the total fee each category
     if (cat1 == 1){
-        cout<<"your child ticket are free"<<endl;
+        cout<<"your child ticket fee is free"<<endl;
     }
-    cout << "Your Teen fee tiket is Rm "<< cat2<<endl;
-    cout << "Your Adult fee tiket is Rm "<<cat3<<endl;
-    cout << "Your Senior fee tiket is Rm "<<cat4<<endl<<endl;
+    cout << "Your Teen ticket fee is Rm "<< cat2<<endl;
+    cout << "Your Adult ticket fee is Rm "<<cat3<<endl;
+    cout << "Your Senior ticket fee is Rm "<<cat4<<endl<<endl;
     //sum all the fee of ticket
     Total_payment=cat1+cat2+cat3+cat4;
-    cout << "Your Total fee tiket is Rm "<<Total_payment<<endl;
+    cout << "Your Total ticket fee is Rm "<<Total_payment<<endl;
 return 0;
 }

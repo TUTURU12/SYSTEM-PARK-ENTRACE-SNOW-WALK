@@ -8,11 +8,11 @@ int main()
 {
     //declare identifier
     int Num_Person, categories, Continue;
-    float Total_payment,cat1,cat2=0 ,cat3=0 ,cat4=0;
+    float Total_payment,cat1=0,cat2=0 ,cat3=0 ,cat4=0;
     cout<<"WELCOME TO SNOWALK INDOOR I-CITY THEME PARK ENTRANCE"<<endl;
     //loop for key in more person 
     do{
-        cout<<"Please select the categories below : \n1) CHILD : 11 YEARS OLD AND BELOW \n2) TEEN : 12 TO 17 YEARS OLD \n3) ADULT : 18 TO 60 YEARS OLD \n4) TEEN : 61 YEARS OLD AND ABOVE"<<endl<<endl;
+        cout<<"Please select the categories below : \n1) CHILD : 11 YEARS OLD AND BELOW \n2) TEEN : 12 TO 17 YEARS OLD \n3) ADULT : 18 TO 60 YEARS OLD \n4) SENIOR : 61 YEARS OLD AND ABOVE"<<endl<<endl;
         cout<<"category : ";
         cin >> categories;
         
@@ -64,7 +64,7 @@ int main()
     cout << "Your Adult ticket fee is Rm "<<cat3<<endl;
     cout << "Your Senior ticket fee is Rm "<<cat4<<endl<<endl;
     //sum all the fee of ticket
-    Total_payment=cat1+cat2+cat3+cat4;
+    Total_payment=cat2+cat3+cat4;
     cout << "Your Total ticket fee is Rm "<<Total_payment<<endl;
-return 0;
+    return 0;
 }
